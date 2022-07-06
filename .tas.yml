@@ -37,6 +37,7 @@ postMerge :
             command:
               - node --version 
         configFile : "./jest.config.ts"
+        parallelism: 10
         
       - name: hoppscotch-js-sandbox     
         path : "./packages/hoppscotch-js-sandbox/"
