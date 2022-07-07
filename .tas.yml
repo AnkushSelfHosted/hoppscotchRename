@@ -20,7 +20,8 @@ postMerge :
             command:
               - node --version 
         configFile : "./jest.config.js"
-      
+        parallelism: 10
+
         
       - name: hoppscotch-cli      
         path : "./packages/hoppscotch-cli/"
@@ -38,6 +39,8 @@ postMerge :
             command:
               - node --version 
         configFile : "./jest.config.ts"
+        parallelism: 10
+
       
         
       - name: hoppscotch-js-sandbox     
@@ -52,6 +55,8 @@ postMerge :
             command:
               - node --version 
         configFile : "./jest.config.js" 
+        parallelism: 10
+
         
         
         
