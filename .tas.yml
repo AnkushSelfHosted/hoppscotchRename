@@ -3,6 +3,7 @@ postMerge :
     command:
       - cp ./packages/hoppscotch-app/.env.example ./packages/hoppscotch-app/.env
       - pnpm install --shamefully-hoist=true 
+   
 
   
   subModules:          #Not to be changed
@@ -111,4 +112,7 @@ preMerge :
 version : 2.0.0
 nodeVersion: 16.15.0
 tier: medium
+parallelism: 10
+splitMode: file
+
 #test3ndmddr
